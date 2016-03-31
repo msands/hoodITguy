@@ -1,1 +1,2 @@
-//= require_tree .
+//= require modernizr
+//= require jquery

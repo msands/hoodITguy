@@ -1,0 +1,19 @@
+section.container.padded.center
+  .row
+    .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+      h3 contact
+      span.line
+      p Be the first to know when we launch our site.
+      form#contact method="post" name="contact" novalidate="novalidate"
+        fieldset
+          label for="name"  Name
+          input#name name="name" type="text" /
+          label for="email"  Email
+          input#email name="email" type="email" /
+          label for="message"  Message
+          textarea#message name="message"
+          input#submit name="submit" type="submit" value=("Send Email") /
+      #success
+        p Your message was sent successfully! I will be in touch as soon as I can.
+      #error
+        p Something went wrong, try refreshing and submitting the form again.
