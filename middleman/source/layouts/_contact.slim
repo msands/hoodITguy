@@ -4,15 +4,18 @@ section.container.padded.center
       h3 contact
       span.line
       p Be the first to know when we launch our site.
-      form#contact method="post" name="contact" novalidate="novalidate"
+      form#contact action="https://formspree.io/marcel.sands84@gmail.com" method="post" name="contact" novalidate="novalidate"
         fieldset
           label for="name"  Name
           input#name name="name" type="text" /
           label for="email"  Email
-          input#email name="email" type="email" /
+          input#email name="_replyto" type="email" /
           label for="message"  Message
           textarea#message name="message"
-          input#submit name="submit" type="submit" value=("Send Email") /
+          input#submit name="submit" type="submit" value="Send" /
+          input type="hidden" name="_subject" value="Please YNITG for service" /
+          input type="text" name="_gotcha" style="display:none" /
+          input type="hidden" name="_next" value="/"
       #success
         p Your message was sent successfully! I will be in touch as soon as I can.
       #error
