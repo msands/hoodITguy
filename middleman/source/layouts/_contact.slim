@@ -8,14 +8,15 @@ section.container.padded.center
         fieldset
           label for="name"  Name
           input#name name="name" type="text" /
+
           label for="email"  Email
           input#email name="_replyto" type="email" /
+
           label for="message"  Message
           textarea#message name="message"
-          input#submit name="submit" type="submit" value="Send" /
-          input type="hidden" name="_subject" value="Please YNITG for service" /
+
+          input#submit type="submit" value="Send" /
+
+          input type="hidden" name="_subject" value="Your Neighborhood IT Guy service request" /
           input type="text" name="_gotcha" style="display:none" /
-      #success
-        p Your message was sent successfully! I will be in touch as soon as I can.
-      #error
-        p Something went wrong, try refreshing and submitting the form again.
+          input type="hidden" name="_next" value="/"
